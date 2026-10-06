@@ -106,3 +106,24 @@ body {
 .category-box p {
     margin: 0;
 }
+
+.category-box {
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.category-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.category-box:active {
+    cursor: grabbing;
+}
+
+.category-box.dragging {
+    opacity: 0.5;
+    transform: scale(0.95);
+}
