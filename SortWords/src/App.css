@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.game {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-header {
+  text-align: center;
+  padding: 15px;
+}
+
+.game-area {
+  position: relative;
+
+  width: 900px;
+  height: 600px;
+
+  margin: auto;
+
+  background: #bde7f0;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+/* =========================
+   FALLING WORD
+========================= */
+
+.falling-word {
+  position: absolute;
+
+  top: 50px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  text-align: center;
+
+  background: white;
+
+  padding: 15px 30px;
+
+  border-radius: 50px;
+}
+
+.falling-word h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.falling-word p {
+  margin: 5px 0 0;
+}
+
+/* =========================
+   CATEGORY BOXES
+========================= */
+
+.category-container {
+  position: absolute;
+
+  bottom: 30px;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.category-box {
+  width: 200px;
+  height: 130px;
+
+  background: white;
+
+  border: 4px solid #333;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.category-icon {
+  font-size: 35px;
+}
+
+.category-box h2 {
+  margin: 5px;
+}
+
+.category-box p {
+  margin: 0;
+}
